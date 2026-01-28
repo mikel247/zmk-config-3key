@@ -1,0 +1,9 @@
+file_format: "1"
+id: mini_keyboard
+name: mini
+type: shield
+url: https://github.com/vostoklabs/zmk-config-3key
+requires:
+  - nrf52840
+features:
+  - keys

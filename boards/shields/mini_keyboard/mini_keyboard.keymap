@@ -1,20 +1,20 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
 / {
     combos {
         compatible = "zmk,combos";
         combo_layer_toggle {
-            timeout-ms = <50>;
-            key-positions = <1 2>; // Pins 002 & 009 (Middle and Right keys)
+            timeout-ms = <100>;
+            key-positions = <1 2>; 
             bindings = <&tog 1>;
         };
     };
 
     behaviors {
         // Simple hold-tap: Hold for Studio Unlock, Tap for Vol Down
-        // This avoids parameter mismatch issues
         vol_dn_studio: vol_dn_studio {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
@@ -35,7 +35,7 @@
 
         bt_layer {
             bindings = <
-                &bt BT_CLR_ALL &bt BT_SEL 1 &bt BT_SEL 0
+                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1
             >;
         };
     };

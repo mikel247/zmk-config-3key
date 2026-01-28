@@ -1,0 +1,6 @@
+if SHIELD_MINI_KEYBOARD
+
+config ZMK_KEYBOARD_NAME
+    default "mini"
+
+endif
