@@ -15,12 +15,13 @@
 
     behaviors {
         // Simple hold-tap: Hold for Studio Unlock, Tap for Vol Down
+        // Fix: Removed comma in bindings to satisfy Devicetree compiler
         vol_dn_studio: vol_dn_studio {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <0>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
-            bindings = <&studio_unlock>, <&kp C_VOL_DN>;
+            bindings = <&studio_unlock &kp C_VOL_DN>;
         };
     };
 
@@ -35,7 +36,7 @@
 
         bt_layer {
             bindings = <
-                &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1
+                &out OUT_TOG &bt BT_CLR &bt BT_SEL 0
             >;
         };
     };
