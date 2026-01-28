@@ -14,14 +14,13 @@
     };
 
     behaviors {
-        // Simple hold-tap: Hold for Studio Unlock, Tap for Vol Down
-        // Fix: Removed comma in bindings to satisfy Devicetree compiler
+        // Hold-tap: Hold for Studio Unlock, Tap for Vol Down
         vol_dn_studio: vol_dn_studio {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
-            bindings = <&studio_unlock &kp C_VOL_DN>;
+            bindings = <&studio_unlock>, <&kp>;
         };
     };
 
@@ -30,7 +29,7 @@
 
         default_layer {
             bindings = <
-                &kp C_VOL_UP &kp C_PP &vol_dn_studio
+                &kp C_VOL_UP &kp C_PP &vol_dn_studio 0 C_VOL_DN
             >;
         };
 
