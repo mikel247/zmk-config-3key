@@ -21,7 +21,7 @@
             bindings = <&bt_clr_macro>, <&none>;
         };
         rand: rng_behavior {
-            compatible = "zmk,behavior-custom-random";
+            compatible = "zmk,behavior-rng-final"; // Changed here
             #binding-cells = <2>; // Param 1: Range/Mode, Param 2: Suffix
         };
     };
