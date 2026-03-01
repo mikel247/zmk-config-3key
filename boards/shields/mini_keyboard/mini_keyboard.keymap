@@ -20,6 +20,10 @@
             tapping-term-ms = <2000>;
             bindings = <&bt_clr_macro>, <&none>;
         };
+        rng: rng_behavior {
+            compatible = "zmk,behavior-custom-random";
+            #binding-cells = <2>; // Param 1: Range/Mode, Param 2: Suffix
+        };
     };
 
     combos {
@@ -45,7 +49,7 @@
 
         default_layer {
             bindings = <
-                &kp A    &kp B    &kp C
+                &rng 20 2    &rng 0 2    &rng 99 0
             >;
         };
     };
