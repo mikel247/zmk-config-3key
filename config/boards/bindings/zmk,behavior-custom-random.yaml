@@ -1,7 +1,0 @@
-description: Custom Random Number Generator
-compatible: "zmk,behavior-custom-random"
-include: [ "behavior-cells.yaml" ]
-properties:
-  "#binding-cells":
-    type: int
-    const: 2
