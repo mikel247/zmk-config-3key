@@ -15,3 +15,4 @@ manifest:
       revision: main
   self:
     path: config
+    import: ../dts # This tells the compiler to look in the root dts folder
