@@ -5,7 +5,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: mikel247 # Replace with your GitHub username
-      url-base: https://github.com/mikel247/zmk-behavior-random
+      url-base: https://github.com/
   projects:
     - name: zmk
       remote: zmkfirmware
