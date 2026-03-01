@@ -49,7 +49,7 @@
 
         default_layer {
             bindings = <
-                &rng 20 2    &rng 0 2    &rng 99 0
+                &rng 20 2    &rng 0 2    &rng 99 0 // button A is dice roll B is full number and C is string 
             >;
         };
     };
