@@ -1,0 +1,6 @@
+description: Hardcoded Random Generator
+compatible: "zmk,behavior-magic-rng"
+properties:
+  "#binding-cells":
+    type: int
+    const: 0
