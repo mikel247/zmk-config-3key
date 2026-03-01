@@ -1,6 +1,0 @@
-description: Custom Random Number Generator
-compatible: "zmk,behavior-rng-final" # Changed here
-properties:
-  "#binding-cells":
-    type: int
-    const: 2
