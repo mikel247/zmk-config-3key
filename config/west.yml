@@ -5,13 +5,11 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: mikel247 # Replace with your GitHub username
-      url-base: https://github.com/mikel247
+      url-base: https://github.com/mikel247/
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
     - name: zmk-behavior-random # This must match your module repo name
       remote: mikel247
-      revision: main
-  self:
-    path: config
+      import: west.yml
