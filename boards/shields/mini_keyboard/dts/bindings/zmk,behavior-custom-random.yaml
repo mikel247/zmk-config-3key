@@ -1,8 +1,11 @@
-# dts/bindings/zmk,behavior-custom-random.yaml
-description: Custom Random Number/String Generator
+# zmk,behavior-custom-random.yaml
+description: Custom Random Number Generator
+
 compatible: "zmk,behavior-custom-random"
-include: [ "zmk,behavior.yaml" ]
+
 properties:
   "#binding-cells":
     type: int
     const: 2
+  label:
+    type: string
