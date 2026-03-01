@@ -12,3 +12,5 @@ manifest:
       import: app/west.yml
     - name: zmk-behavior-random # This must match your module repo name
       remote: mikel247
+  self:
+    path: config
