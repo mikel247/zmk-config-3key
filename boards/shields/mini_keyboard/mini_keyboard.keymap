@@ -15,7 +15,7 @@
         // Hold for 2 seconds to Clear BT, Tap does nothing
         long_bt: long_bt {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
+            #binding-cells =<2>;
             flavor = "tap-preferred";
             tapping-term-ms = <2000>;
             bindings = <&bt_clr_macro>, <&none>;
