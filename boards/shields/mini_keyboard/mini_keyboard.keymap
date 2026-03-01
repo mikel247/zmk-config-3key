@@ -20,9 +20,9 @@
             tapping-term-ms = <2000>;
             bindings = <&bt_clr_macro>, <&none>;
         };
-        gen_rng: rng_behavior {
-            compatible = "zmk,behavior-rng-final"; // Changed here
-            #binding-cells = <2>; // Param 1: Range/Mode, Param 2: Suffix
+        randgen: randgen_node {
+            compatible = "zmk,behavior-magic-rng";
+            #binding-cells = <0>; // Now 0
         };
     };
 
@@ -49,7 +49,7 @@
 
         default_layer {
             bindings = <
-                &gen_rng 20 2    &gen_rng 0 2    &gen_rng 99 0 // button A is dice roll B is full number and C is string 
+                &randgen    &randgen    &randgen // button A is dice roll B is full number and C is string 
             >;
         };
     };
