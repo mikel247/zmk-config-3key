@@ -15,4 +15,3 @@ manifest:
       revision: main
   self:
     path: config
-    import: ../dts  # <--- Add this line here
